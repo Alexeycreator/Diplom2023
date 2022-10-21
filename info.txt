@@ -1,0 +1,2 @@
+clientID - 820397356879-hcopbqgb1vq49l46tvv4igs2guf98ii5.apps.googleusercontent.com
+clientSecret - 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
