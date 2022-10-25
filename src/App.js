@@ -6,10 +6,14 @@ import { NotFound } from "./pages/NotFound";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import { Navigation } from "./navigation/Navigation";
 import { InfoPage } from "./pages/InfoPage";
-import { AuthGoogle } from "./components/AuthGoogle";
 import { GoogleCalendar } from "./components/GoogleCalendar";
+import { AuthGoogle } from "./components/AuthGoogle";
+
+
 
 const App = () => {
+
+
 
   return (
     <>
@@ -18,10 +22,11 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/calendarPage" element={<CalendarPage />} />
         <Route path="/infoPage" element={<InfoPage />} />
+        <Route path="/googleCalendar" element={<GoogleCalendar />} />
         <Route path="/welcomeGoogle" element={<AuthGoogle />} />
-        <Route path="/googleCalendar" element={GoogleCalendar} />
 
         <Route path="*" element={<NotFound />} />
+
 
       </Routes>
     </>
