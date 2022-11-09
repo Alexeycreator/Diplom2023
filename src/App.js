@@ -8,13 +8,9 @@ import { Navigation } from "./navigation/Navigation";
 import { InfoPage } from "./pages/InfoPage";
 import { GoogleCalendar } from "./components/GoogleCalendar";
 import { AuthGoogle } from "./components/AuthGoogle";
-
-
+import { CalendarAPI } from "./components/CalendarAPI";
 
 const App = () => {
-
-
-
   return (
     <>
       <Navigation />
@@ -24,14 +20,12 @@ const App = () => {
         <Route path="/infoPage" element={<InfoPage />} />
         <Route path="/googleCalendar" element={<GoogleCalendar />} />
         <Route path="/welcomeGoogle" element={<AuthGoogle />} />
+        <Route path="/calendarAPI" element={<CalendarAPI />} />
 
         <Route path="*" element={<NotFound />} />
-
-
       </Routes>
     </>
   );
-}
-
+};
 
 export default App;
